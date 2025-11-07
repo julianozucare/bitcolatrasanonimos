@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcólatras Anônimos - Consultoria Cripto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="logo.png" alt="Bitcólatras Anônimos" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback" style="display: none;">
+                    <span class="logo-icon">₿</span>
+                    <span class="logo-text">Bitcólatras Anônimos</span>
+                </div>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#inicio" class="nav__link">Início</a></li>
+                <li><a href="#servicos" class="nav__link">Serviços</a></li>
+                <li><a href="#consultoria" class="nav__link">Consultoria</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#contato" class="nav__link">Agendar</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Consultoria em <span class="gradient-text">Criptomoedas</span>
+                </h1>
+                <p class="hero__description">
+                    Especialistas em blockchain, Bitcoin e criptomoedas. 
+                    Oferecemos consultoria estratégica para investidores, empresas e entusiastas do mundo cripto.
+                </p>
+                <div class="hero__highlight">
+                    <p class="highlight-text">
+                        Pra que pagar uma grana preta numa consultoria pessoal ou um curso inteiro, se você pode agora fazer uma consultoria especializada somente no assunto que te interessa?
+                    </p>
+                </div>
+                <div class="hero__buttons">
+                    <a href="#contato" class="btn btn--primary">Fale Conosco</a>
+                    <a href="#servicos" class="btn btn--secondary">Nossos Serviços</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="crypto-animation">
+                    <div class="crypto-coin coin-1">₿</div>
+                    <div class="crypto-coin coin-2">Ξ</div>
+                    <div class="crypto-coin coin-3">◉</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section__title">Nossos Serviços</h2>
+            <p class="section__subtitle">Soluções completas para o mundo cripto</p>
+            
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">📊</div>
+                    <h3 class="service-card__title">Análise de Mercado</h3>
+                    <p class="service-card__description">
+                        Análise técnica e fundamentalista de criptomoedas para tomada de decisões estratégicas.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">🔐</div>
+                    <h3 class="service-card__title">Segurança Digital</h3>
+                    <p class="service-card__description">
+                        Consultoria em segurança para carteiras, exchanges e proteção de ativos digitais.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">💼</div>
+                    <h3 class="service-card__title">Estratégia de Investimento</h3>
+                    <p class="service-card__description">
+                        Desenvolvimento de estratégias personalizadas de investimento em criptomoedas.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">🏢</div>
+                    <h3 class="service-card__title">Consultoria Empresarial</h3>
+                    <p class="service-card__description">
+                        Implementação de soluções blockchain e cripto para empresas e negócios. Faremos uma análise do seu perfil de investidor.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">📚</div>
+                    <h3 class="service-card__title">Educação e Treinamento</h3>
+                    <p class="service-card__description">
+                        Cursos e workshops sobre blockchain, Bitcoin e o ecossistema cripto.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">⚡</div>
+                    <h3 class="service-card__title">DeFi e NFTs</h3>
+                    <p class="service-card__description">
+                        Consultoria especializada em finanças descentralizadas e tokens não fungíveis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultoria Topics Section -->
+    <section id="consultoria" class="consultoria-topics">
+        <div class="container">
+            <h2 class="section__title">Assuntos de Consultoria</h2>
+            <p class="section__subtitle">Primeiro, selecione o tempo de consultoria desejado</p>
+            
+            <div class="duration-selection">
+                <div class="duration-option" data-duration="30min">
+                    <div class="duration-icon">⏱️</div>
+                    <h3>30 Minutos</h3>
+                    <p>Assuntos diversos</p>
+                    <p class="duration-detail">Até 2 opções de assuntos</p>
+                </div>
+                <div class="duration-option" data-duration="1h">
+                    <div class="duration-icon">⏰</div>
+                    <h3>1 Hora</h3>
+                    <p>Assunto detalhado</p>
+                    <p class="duration-detail">1 opção de assunto</p>
+                </div>
+            </div>
+            
+            <div class="consultoria-info" id="consultoria-info" style="display: none;">
+                <div class="info-card">
+                    <div class="info-icon">📄</div>
+                    <h3>Material PDF</h3>
+                    <p><strong>Mais de 2h de consultoria:</strong> PDF grátis sobre o assunto abordado</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">👥</div>
+                    <h3>Convide Alguém</h3>
+                    <p>Você pode convidar uma pessoa para participar da consultoria</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📱</div>
+                    <h3>Plataforma</h3>
+                    <p>Consultoria realizada via <strong>WhatsApp</strong></p>
+                </div>
+            </div>
+            
+            <div id="topics-section" style="display: none;">
+                <h3 class="topics-section-title">Agora selecione os assuntos:</h3>
+
+            <div class="topics-container">
+                <div class="topics-category">
+                    <h3 class="category-title">🔐 Segurança e Custódia</h3>
+                    <div class="topics-grid">
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="auto-custodia" data-category="seguranca">
+                            <span class="checkbox-label">Auto Custódia</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="chaves-privadas" data-category="seguranca">
+                            <span class="checkbox-label">Como Guardar Chaves Privadas</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="backup-seguro" data-category="seguranca">
+                            <span class="checkbox-label">Backup Seguro de Carteiras</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="seed-phrase" data-category="seguranca">
+                            <span class="checkbox-label">Proteção de Seed Phrase</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topics-category">
+                    <h3 class="category-title">💼 Carteiras</h3>
+                    <div class="topics-grid">
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="blue-wallet" data-category="carteiras">
+                            <span class="checkbox-label">Como Utilizar Blue Wallet</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="carteira-hardware" data-category="carteiras">
+                            <span class="checkbox-label">Melhor Carteira Hardware</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="carteira-software" data-category="carteiras">
+                            <span class="checkbox-label">Melhor Carteira Software</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="carteira-triplo" data-category="carteiras">
+                            <span class="checkbox-label">Carteira Triplo Software</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="comparacao-carteiras" data-category="carteiras">
+                            <span class="checkbox-label">Comparação de Carteiras</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topics-category">
+                    <h3 class="category-title">₿ Bitcoin</h3>
+                    <div class="topics-grid">
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="bitcoin-basico" data-category="bitcoin">
+                            <span class="checkbox-label">Bitcoin para Iniciantes</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="lightning-network" data-category="bitcoin">
+                            <span class="checkbox-label">Lightning Network</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="mining-bitcoin" data-category="bitcoin">
+                            <span class="checkbox-label">Mineração de Bitcoin</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="investir-bitcoin" data-category="bitcoin">
+                            <span class="checkbox-label">Como Investir em Bitcoin</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topics-category">
+                    <h3 class="category-title">🪙 Stablecoins e Altcoins</h3>
+                    <div class="topics-grid">
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="stablecoins" data-category="altcoins">
+                            <span class="checkbox-label">O que são Stablecoins</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="altcoins-investimento" data-category="altcoins">
+                            <span class="checkbox-label">Investindo em Altcoins</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="analise-altcoins" data-category="altcoins">
+                            <span class="checkbox-label">Análise de Altcoins</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="defi-basico" data-category="altcoins">
+                            <span class="checkbox-label">DeFi Básico</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topics-category">
+                    <h3 class="category-title">📊 Análise e Estratégia</h3>
+                    <div class="topics-grid">
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="analise-tecnica" data-category="analise">
+                            <span class="checkbox-label">Análise Técnica</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="analise-fundamentalista" data-category="analise">
+                            <span class="checkbox-label">Análise Fundamentalista</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="estrategia-investimento" data-category="analise">
+                            <span class="checkbox-label">Estratégia de Investimento</span>
+                        </label>
+                        <label class="topic-checkbox">
+                            <input type="checkbox" name="topics" value="gerenciamento-risco" data-category="analise">
+                            <span class="checkbox-label">Gerenciamento de Risco</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="selection-summary" id="selection-summary" style="display: none;">
+                <h3>Resumo da Seleção</h3>
+                <div class="summary-content">
+                    <div class="summary-item">
+                        <strong>Assuntos selecionados:</strong>
+                        <span id="selected-topics-count">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Duração recomendada:</strong>
+                        <span id="recommended-duration">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Assuntos:</strong>
+                        <div id="selected-topics-list" class="topics-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2 class="section__title">Sobre Nós</h2>
+                    <p class="about__description">
+                        A <strong>Bitcólatras Anônimos</strong> é uma consultoria especializada em criptomoedas 
+                        e blockchain, formada por especialistas apaixonados pelo mundo cripto.
+                    </p>
+                    <p class="about__description">
+                        Nossa missão é democratizar o acesso ao conhecimento sobre criptomoedas, 
+                        oferecendo consultoria de qualidade para investidores, empresas e entusiastas 
+                        que desejam navegar com segurança e confiança no ecossistema blockchain.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <div class="stat__number">500+</div>
+                            <div class="stat__label">Clientes Atendidos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number">10+</div>
+                            <div class="stat__label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number">50+</div>
+                            <div class="stat__label">Projetos Concluídos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section__title">Agende sua Consultoria</h2>
+            <p class="section__subtitle">Preencha o formulário abaixo. Entraremos em contato em breve para confirmar o agendamento</p>
+            
+            <div class="consultoria-rules">
+                <div class="rule-box">
+                    <h3>📋 Como Funciona</h3>
+                    <ul>
+                        <li><strong>Duração:</strong> 30 minutos (até 2 assuntos) ou 1 hora (1 assunto detalhado)</li>
+                        <li><strong>Plataforma:</strong> Consultoria realizada via WhatsApp</li>
+                        <li><strong>Convidado:</strong> Você pode convidar uma pessoa para participar (informe telefone do convidado)</li>
+                        <li><strong>Mediador:</strong> A cada hora, o mediador interrompe para oferecer nova hora de consultoria (se disponível)</li>
+                        <li><strong>Tolerância:</strong> 5 minutos de tolerância que serão descontados ao final</li>
+                        <li><strong>PDF:</strong> Mais de 2h de consultoria: PDF grátis sobre o assunto abordado</li>
+                        <li><strong>Agendamento:</strong> Após envio do formulário, entraremos em contato em minutos conforme disponibilidade</li>
+                        <li><strong>Pagamento:</strong> Após receber o formulário, enviaremos instruções de pagamento via WhatsApp</li>
+                        <li><strong>Confirmação:</strong> Após envio do comprovante de pagamento, agendaremos o melhor dia disponível</li>
+                        <li><strong>⚠️ Importante:</strong> Após 3 tentativas de contato fracassadas, a consultoria será cancelada e o valor não poderá ser restituído</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contact__content">
+                <form class="contact__form" id="contact-form">
+                    <h3 class="form-section-title">Dados Pessoais</h3>
+                    
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nome Completo *</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="whatsapp" class="form__label">Telefone/WhatsApp Principal *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" class="form__input" placeholder="(00) 00000-0000" required>
+                        <small class="form-hint">Número para envio de instruções de pagamento e contato</small>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+
+                    <h3 class="form-section-title">Detalhes da Consultoria</h3>
+
+                    <div class="form__group">
+                        <label for="duration" class="form__label">Duração da Consultoria *</label>
+                        <select id="duration" name="duration" class="form__input" required>
+                            <option value="">Selecione a duração</option>
+                            <option value="30min">30 minutos (até 2 assuntos)</option>
+                            <option value="1h">1 hora (1 assunto detalhado)</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label">Assuntos Selecionados *</label>
+                        <div id="selected-topics-form" class="selected-topics-display">
+                            <p class="no-topics-message">Nenhum assunto selecionado. <a href="#consultoria">Selecione os assuntos acima</a></p>
+                        </div>
+                        <input type="hidden" id="topics-input" name="topics" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="has-guest" class="form__label checkbox-label-inline">
+                            <input type="checkbox" id="has-guest" name="has-guest">
+                            <span>Vou convidar uma pessoa para participar</span>
+                        </label>
+                    </div>
+
+                    <div class="form__group" id="guest-info" style="display: none;">
+                        <label for="guest-name" class="form__label">Nome do Convidado *</label>
+                        <input type="text" id="guest-name" name="guest-name" class="form__input">
+                        
+                        <label for="guest-phone" class="form__label" style="margin-top: 1rem;">Telefone/WhatsApp do Convidado *</label>
+                        <input type="tel" id="guest-phone" name="guest-phone" class="form__input" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <h3 class="form-section-title">Disponibilidade para Agendamento</h3>
+                    <p class="form-hint" style="margin-bottom: 1rem; color: var(--text-secondary);">Informe os dias e horários em que você está disponível para a consultoria</p>
+                    
+                    <div id="availability-container">
+                        <div class="availability-item">
+                            <div class="form__group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div>
+                                    <label class="form__label">Data Disponível</label>
+                                    <input type="date" class="form__input availability-date" name="availability-date[]">
+                                </div>
+                                <div>
+                                    <label class="form__label">Horário Disponível</label>
+                                    <input type="time" class="form__input availability-time" name="availability-time[]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn btn--secondary" id="add-availability" style="margin-top: 1rem;">
+                        + Adicionar Outro Dia/Horário
+                    </button>
+
+                    <div class="form__group">
+                        <label for="additional-info" class="form__label">Informações Adicionais</label>
+                        <textarea id="additional-info" name="additional-info" class="form__input form__textarea" rows="4" placeholder="Alguma observação ou preferência específica?"></textarea>
+                    </div>
+
+                    <div class="form-summary" id="form-summary" style="display: none;">
+                        <h4>Resumo do Agendamento</h4>
+                        <div class="summary-details">
+                            <p><strong>Duração:</strong> <span id="summary-duration">-</span></p>
+                            <p><strong>Assuntos:</strong> <span id="summary-topics">-</span></p>
+                            <p><strong>Convidado:</strong> <span id="summary-guest">Não</span></p>
+                            <p class="pdf-info" id="pdf-info" style="display: none;"><strong>📄 PDF:</strong> Incluso na consultoria (+25%)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-info-box">
+                        <h4>💳 Sobre o Pagamento</h4>
+                        <p>Após enviar este formulário, você receberá as instruções de pagamento via WhatsApp. O agendamento será confirmado após o envio do comprovante de pagamento.</p>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full">Enviar Solicitação de Agendamento</button>
+                    <p class="form-submit-note">Os dados serão enviados por email e entraremos em contato em breve</p>
+                </form>
+                
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>bitcolatrasanonimos@gmail.com</p>
+                            <p class="contact-note">Formulário será enviado automaticamente para este email</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">📱</div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>Consultoria realizada via WhatsApp</p>
+                            <p class="contact-note">Você receberá instruções de pagamento e link do grupo após confirmação</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">⏰</div>
+                        <div>
+                            <h4>Resposta Rápida</h4>
+                            <p>Entraremos em contato em minutos</p>
+                            <p class="contact-note">Após envio do formulário, responderemos conforme disponibilidade</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">👤</div>
+                        <div>
+                            <h4>Mediador</h4>
+                            <p>Mediador presente durante toda consultoria</p>
+                            <p class="contact-note">A cada hora, oferece nova hora de consultoria se disponível</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <div class="contact__icon">📄</div>
+                        <div>
+                            <h4>Material PDF</h4>
+                            <p>PDF disponível durante consultoria</p>
+                            <p class="contact-note">Mais de 2h de consultoria: PDF grátis sobre o assunto</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item warning-item">
+                        <div class="contact__icon">⚠️</div>
+                        <div>
+                            <h4>Política de Cancelamento</h4>
+                            <p>Após 3 tentativas de contato fracassadas, a consultoria será cancelada</p>
+                            <p class="contact-note warning-note">O valor não poderá ser restituído em caso de cancelamento por falta de resposta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="logo.png" alt="Bitcólatras Anônimos" class="logo-image footer-logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback" style="display: none;">
+                            <span class="logo-icon">₿</span>
+                            <span class="logo-text">Bitcólatras Anônimos</span>
+                        </div>
+                    </div>
+                    <p class="footer__description">
+                        Consultoria especializada em criptomoedas e blockchain.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social__links">
+                        <a href="https://www.youtube.com/@julianodemedeiros" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <span class="social-icon">▶️</span>
+                            <span>YouTube - Juliano</span>
+                        </a>
+                        <a href="https://www.youtube.com/@bitcolatras" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <span class="social-icon">▶️</span>
+                            <span>YouTube - Bitcolatras</span>
+                        </a>
+                        <a href="https://x.com/bitcolatras" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <span class="social-icon">𝕏</span>
+                            <span>X (Twitter)</span>
+                        </a>
+                        <a href="https://instagram.com/bitcolatras" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <span class="social-icon">📷</span>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://t.me/canaldosbitcolatras" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <span class="social-icon">✈️</span>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://substack.com/@bitcolatras" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <span class="social-icon">📰</span>
+                            <span>Substack</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Bitcólatras Anônimos. Todos os direitos reservados.</p>
+                <p class="footer__disclaimer">
+                    ⚠️ Aviso: Investimentos em criptomoedas envolvem riscos. Consulte sempre um profissional qualificado.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
