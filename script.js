@@ -71,24 +71,8 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Form submission handler
+// Referência ao formulário de contato
 const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
-        alert('Obrigado pelo contato! Entraremos em contato em breve.');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
@@ -505,7 +489,7 @@ formInputs.forEach(input => {
     input.addEventListener('input', updateFormSummary);
 });
 
-// Form submission handler
+// Form submission handler (envio via WhatsApp)
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -568,18 +552,17 @@ if (contactForm) {
         data.topics = JSON.parse(data.topics || '[]');
         data.availability = availability;
         
-        // Create email message
-        const emailSubject = 'Nova Solicitação de Agendamento - Bitcólatras Anônimos';
-        const emailBody = createEmailMessage(data);
+        // Create WhatsApp message
+        const whatsappMessage = createEmailMessage(data);
         
-        // Open email client
-        const emailTo = 'bitcolatrasanonimos@gmail.com';
-        const emailUrl = `mailto:${emailTo}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-        window.location.href = emailUrl;
+        // Open WhatsApp chat with pre-filled message
+        const whatsappNumber = '5511953724349'; // DDI + DDD + número (sem espaços ou traços)
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl, '_blank');
         
-        // Show success message
+        // Show success message / orientação
         setTimeout(() => {
-            alert('✅ Formulário enviado! Se seu cliente de email não abriu automaticamente, envie um email para bitcolatrasanonimos@gmail.com com as informações do formulário.\n\nEntraremos em contato em breve via WhatsApp!');
+            alert('✅ Quase lá! Abrimos o WhatsApp com a mensagem pronta.\n\nConfira os dados e toque em ENVIAR no WhatsApp para concluir o agendamento.\n\nSe o WhatsApp não abriu, copie os dados do formulário e envie manualmente uma mensagem para o número (11) 95372-4349.');
         }, 500);
     });
 }
